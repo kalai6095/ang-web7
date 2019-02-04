@@ -1,0 +1,23 @@
+<!--Introduction-->
+<section id="pricing" class="secondary-color text-center scrollto clearfix ">
+  {{article}}
+  <div class="row clearfix">
+    <div class="section-heading">
+      <h3>{{article.tagline |uppercase }}</h3>
+      <h2 class="section-title">{{article.title}}</h2>
+      <p class="section-subtitle">{{article.description}}</p>
+    </div>
+  </div>
+
+  <blockquote class="col-3 testimonial classic">
+    <img src="{{article.img}}" alt="User"/>
+    <h6>{{article.author |uppercase }}</h6>
+
+  </blockquote>
+  <div class="col-2">
+
+    <p>{{article.description}}</p>
+    <footer><span class="post"><i class="{{article.icon}}"></i></span> | {{article.author}} - {{article.date|date:'dd/MM/yyyy'}}</footer>
+  </div>
+</section>
+<!--End of Introduction-->

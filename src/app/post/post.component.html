@@ -1,0 +1,16 @@
+<!--Pricing Block-->
+<div *ngFor="let post of posts.lists; let i=index" class="post-block col-3 wow fadeInUp" data-wow-delay="0.4s">
+  <div class="post-block-content">
+    <h3>{{post.title}}</h3>
+    <p class="post-sub">By {{post.author}} | {{post.date|date:'dd/MM/yyyy'}}</p>
+    <div class="posting">
+      <div class="post"></div>
+      <p>{{post.description |textFilter:100}}</p>
+    </div>
+    <a href="/Article/{{post.id}}" class="button">Read More</a>
+  </div>
+</div>
+<!--End post Block-->
+
+
+
