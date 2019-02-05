@@ -1,5 +1,6 @@
-import {Component, OnInit} from '@angular/core';
+import {Component, Input, OnInit} from '@angular/core';
 import {ConfigService} from "../config.service";
+import {PagerService} from "../pager.service";
 
 @Component({
   selector: 'app-post',
@@ -8,13 +9,26 @@ import {ConfigService} from "../config.service";
 })
 export class PostComponent implements OnInit {
 
-  posts = {};
+  // @Input()posts = {};
 
-  constructor(private config:ConfigService) {
+  posts = {};
+  allItems: any[];
+  pages: any[];
+  pageSize = 4;
+  pager: any = {};
+
+  constructor(private config: ConfigService, private pagerService: PagerService) {
   }
 
   ngOnInit() {
-    this.posts=this.config.getConfigInfo().posts;
+    this.posts = this.config.getConfigInfo().posts;
+    this.allItems = this.posts["lists"];
+    this.setPage(1);
+  }
+
+  setPage(pageNumber: number) {
+    this.pager = this.pagerService.getPager(this.allItems.length, pageNumber, this.pageSize);
+    this.pages = this.allItems.slice(this.pager.startIndex, this.pager.endIndex);
   }
 
 }

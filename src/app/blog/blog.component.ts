@@ -1,5 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 import {ConfigService} from "../config.service";
+
 
 @Component({
   selector: 'app-blog',
@@ -8,11 +9,16 @@ import {ConfigService} from "../config.service";
 })
 export class BlogComponent implements OnInit {
 
-  blog={};
-  constructor(private config:ConfigService) { }
+  blog: any = {};
+
+
+  constructor(private config: ConfigService) {
+  }
 
   ngOnInit() {
-    this.blog=this.config.getConfigInfo().blog;
+    this.blog = this.config.getConfigInfo().blog;
+
   }
+
 
 }

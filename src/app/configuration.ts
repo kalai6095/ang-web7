@@ -186,7 +186,7 @@ export const configuration = {
     'lists': [
       {
         'id': "1",
-        'tagline': "Java Related",
+        'tagline': "Java Related-01",
         'title': "Java Blog",
         'author': "Jet Brains",
         'date': new Date(),
@@ -197,7 +197,192 @@ export const configuration = {
       },
       {
         'id': "2",
-        'tagline': "Angular Related",
+        'tagline': "Angular Related-02",
+        'title': " Angular Blog",
+        'author': "Jet Brains ",
+        'date': new Date(),
+        'icon': "fa fa-user fa-2x",
+        'img': "assets/images/gallery-images/gallery-image-2.jpg",
+        'description': 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua!.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua!. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua!. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua '
+
+      },
+      {
+        'id': "3",
+        'tagline': "Angular Related-03",
+        'title': " Angular Blog",
+        'author': "Jet Brains ",
+        'date': new Date(),
+        'icon': "fa fa-user fa-2x",
+        'img': "assets/images/gallery-images/gallery-image-2.jpg",
+        'description': 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua!.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua!. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua!. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua '
+
+      },{
+        'id': "4",
+        'tagline': "Angular Related-04",
+        'title': " Angular Blog",
+        'author': "Jet Brains ",
+        'date': new Date(),
+        'icon': "fa fa-user fa-2x",
+        'img': "assets/images/gallery-images/gallery-image-2.jpg",
+        'description': 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua!.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua!. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua!. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua '
+
+      },{
+        'id': "5",
+        'tagline': "Angular Related-05",
+        'title': " Angular Blog",
+        'author': "Jet Brains ",
+        'date': new Date(),
+        'icon': "fa fa-user fa-2x",
+        'img': "assets/images/gallery-images/gallery-image-2.jpg",
+        'description': 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua!.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua!. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua!. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua '
+
+      },{
+        'id': "6",
+        'tagline': "Angular Related-06",
+        'title': " Angular Blog",
+        'author': "Jet Brains ",
+        'date': new Date(),
+        'icon': "fa fa-user fa-2x",
+        'img': "assets/images/gallery-images/gallery-image-2.jpg",
+        'description': 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua!.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua!. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua!. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua '
+
+      },{
+        'id': "7",
+        'tagline': "Angular Related-07",
+        'title': " Angular Blog",
+        'author': "Jet Brains ",
+        'date': new Date(),
+        'icon': "fa fa-user fa-2x",
+        'img': "assets/images/gallery-images/gallery-image-2.jpg",
+        'description': 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua!.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua!. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua!. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua '
+
+      },{
+        'id': "8",
+        'tagline': "Angular Related-08",
+        'title': " Angular Blog",
+        'author': "Jet Brains ",
+        'date': new Date(),
+        'icon': "fa fa-user fa-2x",
+        'img': "assets/images/gallery-images/gallery-image-2.jpg",
+        'description': 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua!.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua!. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua!. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua '
+
+      },{
+        'id': "9",
+        'tagline': "Angular Related-09",
+        'title': " Angular Blog",
+        'author': "Jet Brains ",
+        'date': new Date(),
+        'icon': "fa fa-user fa-2x",
+        'img': "assets/images/gallery-images/gallery-image-2.jpg",
+        'description': 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua!.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua!. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua!. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua '
+
+      },
+      {
+        'id': "10",
+        'tagline': "Angular Related-10",
+        'title': " Angular Blog",
+        'author': "Jet Brains ",
+        'date': new Date(),
+        'icon': "fa fa-user fa-2x",
+        'img': "assets/images/gallery-images/gallery-image-2.jpg",
+        'description': 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua!.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua!. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua!. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua '
+
+      },{
+        'id': "11",
+        'tagline': "Java Related-11",
+        'title': "Java Blog",
+        'author': "Jet Brains",
+        'date': new Date(),
+        'icon': "fa fa-bars fa-2x",
+        'img': "assets/images/gallery-images/gallery-image-1.jpg",
+        'description': 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua!.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua!. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua!. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua '
+
+      },
+      {
+        'id': "12",
+        'tagline': "Angular Related-12",
+        'title': " Angular Blog",
+        'author': "Jet Brains ",
+        'date': new Date(),
+        'icon': "fa fa-user fa-2x",
+        'img': "assets/images/gallery-images/gallery-image-2.jpg",
+        'description': 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua!.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua!. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua!. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua '
+
+      },
+      {
+        'id': "13",
+        'tagline': "Angular Related-13",
+        'title': " Angular Blog",
+        'author': "Jet Brains ",
+        'date': new Date(),
+        'icon': "fa fa-user fa-2x",
+        'img': "assets/images/gallery-images/gallery-image-2.jpg",
+        'description': 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua!.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua!. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua!. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua '
+
+      },{
+        'id': "14",
+        'tagline': "Angular Related-14",
+        'title': " Angular Blog",
+        'author': "Jet Brains ",
+        'date': new Date(),
+        'icon': "fa fa-user fa-2x",
+        'img': "assets/images/gallery-images/gallery-image-2.jpg",
+        'description': 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua!.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua!. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua!. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua '
+
+      },{
+        'id': "15",
+        'tagline': "Angular Related-15",
+        'title': " Angular Blog",
+        'author': "Jet Brains ",
+        'date': new Date(),
+        'icon': "fa fa-user fa-2x",
+        'img': "assets/images/gallery-images/gallery-image-2.jpg",
+        'description': 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua!.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua!. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua!. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua '
+
+      },{
+        'id': "16",
+        'tagline': "Angular Related-16",
+        'title': " Angular Blog",
+        'author': "Jet Brains ",
+        'date': new Date(),
+        'icon': "fa fa-user fa-2x",
+        'img': "assets/images/gallery-images/gallery-image-2.jpg",
+        'description': 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua!.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua!. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua!. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua '
+
+      },{
+        'id': "17",
+        'tagline': "Angular Related-17",
+        'title': " Angular Blog",
+        'author': "Jet Brains ",
+        'date': new Date(),
+        'icon': "fa fa-user fa-2x",
+        'img': "assets/images/gallery-images/gallery-image-2.jpg",
+        'description': 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua!.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua!. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua!. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua '
+
+      },{
+        'id': "18",
+        'tagline': "Angular Related-18",
+        'title': " Angular Blog",
+        'author': "Jet Brains ",
+        'date': new Date(),
+        'icon': "fa fa-user fa-2x",
+        'img': "assets/images/gallery-images/gallery-image-2.jpg",
+        'description': 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua!.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua!. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua!. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua '
+
+      },{
+        'id': "19",
+        'tagline': "Angular Related-19",
+        'title': " Angular Blog",
+        'author': "Jet Brains ",
+        'date': new Date(),
+        'icon': "fa fa-user fa-2x",
+        'img': "assets/images/gallery-images/gallery-image-2.jpg",
+        'description': 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua!.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua!. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua!. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua '
+
+      },
+      {
+        'id': "20",
+        'tagline': "Angular Related-20",
         'title': " Angular Blog",
         'author': "Jet Brains ",
         'date': new Date(),

@@ -9,6 +9,7 @@ import {TestimonialComponent} from "./testimonial/testimonial.component";
 import {HomeComponent} from "./home/home.component";
 import {BlogComponent} from "./blog/blog.component";
 import {ArticleComponent} from "./article/article.component";
+import {NotfoundComponent} from "./notfound/notfound.component";
 
 const routes: Routes = [
   {path: '', redirectTo: '/Home', pathMatch: "full"},
@@ -20,7 +21,9 @@ const routes: Routes = [
   {path: 'Service', component: ServicesComponent},
   {path: 'Testimonial', component: TestimonialComponent},
   {path: 'Blog', component: BlogComponent},
-  {path: 'Article/:id', component: ArticleComponent}];
+  {path: 'Article/:id', component: ArticleComponent},
+  {path:'404',component:NotfoundComponent},
+  {path:'**',redirectTo:'/404'}];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],

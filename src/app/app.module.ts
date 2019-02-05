@@ -22,6 +22,8 @@ import {BlogComponent} from './blog/blog.component';
 import {PostComponent} from './post/post.component';
 import {ArticleComponent} from './article/article.component';
 import {TextFilter} from "./text-filter";
+import { NotfoundComponent } from './notfound/notfound.component';
+import { PaginationComponent } from './pagination/pagination.component';
 
 @NgModule({
   declarations: [
@@ -42,7 +44,9 @@ import {TextFilter} from "./text-filter";
     BlogComponent,
     PostComponent,
     ArticleComponent,
-    TextFilter
+    TextFilter,
+    NotfoundComponent,
+    PaginationComponent
   ],
   imports: [
     BrowserModule,
