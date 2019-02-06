@@ -2,6 +2,7 @@ import {BrowserModule} from '@angular/platform-browser';
 import {NgModule} from '@angular/core';
 import {AngularFontAwesomeModule} from "angular-font-awesome";
 import {HttpClientModule} from "@angular/common/http";
+import {ReactiveFormsModule} from "@angular/forms";
 
 import {AppRoutingModule} from './app-routing.module';
 import {AppComponent} from './app.component';
@@ -22,8 +23,11 @@ import {BlogComponent} from './blog/blog.component';
 import {PostComponent} from './post/post.component';
 import {ArticleComponent} from './article/article.component';
 import {TextFilter} from "./text-filter";
-import { NotfoundComponent } from './notfound/notfound.component';
-import { PaginationComponent } from './pagination/pagination.component';
+import {NotfoundComponent} from './notfound/notfound.component';
+import {PaginationComponent} from './pagination/pagination.component';
+import {LoginComponent} from './login/login.component';
+import {ContactComponent} from './contact/contact.component';
+import {SignupComponent} from './signup/signup.component';
 
 @NgModule({
   declarations: [
@@ -46,13 +50,17 @@ import { PaginationComponent } from './pagination/pagination.component';
     ArticleComponent,
     TextFilter,
     NotfoundComponent,
-    PaginationComponent
+    PaginationComponent,
+    LoginComponent,
+    ContactComponent,
+    SignupComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     AngularFontAwesomeModule,
-    HttpClientModule
+    HttpClientModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

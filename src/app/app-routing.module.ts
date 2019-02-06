@@ -10,9 +10,17 @@ import {HomeComponent} from "./home/home.component";
 import {BlogComponent} from "./blog/blog.component";
 import {ArticleComponent} from "./article/article.component";
 import {NotfoundComponent} from "./notfound/notfound.component";
+import {RoutegaurdService} from "./services/routeg/routegaurd.service";
+import {LoginComponent} from "./login/login.component";
+import {SignupComponent} from "./signup/signup.component";
+import {ContactComponent} from "./contact/contact.component";
 
 const routes: Routes = [
+
   {path: '', redirectTo: '/Home', pathMatch: "full"},
+  {path: 'login', component: LoginComponent},
+  {path: 'signup', component: SignupComponent},
+  {path: 'contactus', component: ContactComponent},
   {path: 'Home', component: HomeComponent},
   {path: 'About', component: IntroComponent},
   {path: 'Gallery', component: GalleryComponent},
@@ -20,10 +28,12 @@ const routes: Routes = [
   {path: 'Pricing', component: PricingComponent},
   {path: 'Service', component: ServicesComponent},
   {path: 'Testimonial', component: TestimonialComponent},
-  {path: 'Blog', component: BlogComponent},
+  {path: 'Blog', component: BlogComponent, canActivate: [RoutegaurdService]},
   {path: 'Article/:id', component: ArticleComponent},
-  {path:'404',component:NotfoundComponent},
-  {path:'**',redirectTo:'/404'}];
+  {path: '404', component: NotfoundComponent},
+  {path: '**', redirectTo: '/404'}
+
+];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
