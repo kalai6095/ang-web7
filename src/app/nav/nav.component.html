@@ -2,7 +2,8 @@
 <nav id="nav-main">
   <ul>
     <li>
-      <a routerLink="/Home" (click)="getActiveTab('Home')" [class.active]="activeTab==='Home'">Home</a>
+      <a routerLink="/Home" routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}"
+         (click)="getActiveTab('Home')">Home</a>
     </li>
     <li>
       <a routerLink="/About" (click)="getActiveTab('About')" [class.active]="activeTab==='About'">About</a>
@@ -24,6 +25,9 @@
     </li>
     <li>
       <a routerLink="/Blog" (click)="getActiveTab('Blog')" [class.active]="activeTab==='Blog'">Blog</a>
+    </li>
+    <li>
+      <a (click)="logout()">Logout</a>
     </li>
   </ul>
 </nav>

@@ -11,10 +11,10 @@ export class RoutegaurdService implements CanActivate {
   }
 
   canActivate(route: ActivatedRouteSnapshot, state: RouterStateSnapshot) {
-    if (localStorage.getItem("currentUser")) {
+    if (localStorage.getItem("user")) {
       return true;
     }
-    this.router.navigate(['/login'], {queryParams: {returnUrl: state.url}})
+    this.router.navigate(['/Login'], {queryParams: {returnUrl: state.url}})
     return false;
   }
 

@@ -2,7 +2,8 @@ import {BrowserModule} from '@angular/platform-browser';
 import {NgModule} from '@angular/core';
 import {AngularFontAwesomeModule} from "angular-font-awesome";
 import {HttpClientModule} from "@angular/common/http";
-import {ReactiveFormsModule} from "@angular/forms";
+import {ReactiveFormsModule, FormsModule} from "@angular/forms";
+//import {InMemoryDataService} from "./inmemory/"
 
 import {AppRoutingModule} from './app-routing.module';
 import {AppComponent} from './app.component';
@@ -28,6 +29,8 @@ import {PaginationComponent} from './pagination/pagination.component';
 import {LoginComponent} from './login/login.component';
 import {ContactComponent} from './contact/contact.component';
 import {SignupComponent} from './signup/signup.component';
+import {InMemoryDataService} from "./services/inmemory/in-memory-data.service";
+import {HttpClientInMemoryWebApiModule} from "angular-in-memory-web-api";
 
 @NgModule({
   declarations: [
@@ -54,13 +57,18 @@ import {SignupComponent} from './signup/signup.component';
     LoginComponent,
     ContactComponent,
     SignupComponent
+
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     AngularFontAwesomeModule,
     HttpClientModule,
-    ReactiveFormsModule
+    FormsModule,
+    ReactiveFormsModule,
+    HttpClientInMemoryWebApiModule.forRoot(
+      InMemoryDataService,{dataEncapsulation:false}
+    )
   ],
   providers: [],
   bootstrap: [AppComponent]
