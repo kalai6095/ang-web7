@@ -27,7 +27,19 @@
               "src/namari-color.css",
               "node_modules/font-awesome/css/font-awesome.css"
             ],
-            "scripts": []
+            "scripts": [
+              "src/assets/js/jquery.js",
+              "node_modules/wow.js/dist/wow.js",
+              "node_modules/waypoints/lib/jquery.waypoints.min.js",
+              "src/assets/js/featherlight.min.js",
+              "src/assets/js/featherlight.gallery.min.js",
+              "src/assets/js/jquery.enllax.min.js",
+              "src/assets/js/jquery.scrollUp.min.js",
+              "src/assets/js/jquery.easing.min.js",
+              "src/assets/js/jquery.stickyNavbar.min.js",
+              "src/assets/js/images-loaded.min.js",
+              "src/assets/js/lightbox.min.js"
+            ]
           },
           "configurations": {
             "production": {

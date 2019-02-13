@@ -67,7 +67,7 @@ import {HttpClientInMemoryWebApiModule} from "angular-in-memory-web-api";
     FormsModule,
     ReactiveFormsModule,
     HttpClientInMemoryWebApiModule.forRoot(
-      InMemoryDataService,{dataEncapsulation:false}
+      InMemoryDataService, {dataEncapsulation: false}
     )
   ],
   providers: [],
