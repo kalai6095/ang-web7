@@ -3,6 +3,7 @@ import {NgModule} from '@angular/core';
 import {AngularFontAwesomeModule} from "angular-font-awesome";
 import {HttpClientModule} from "@angular/common/http";
 import {ReactiveFormsModule, FormsModule} from "@angular/forms";
+import { MarkdownModule, MarkedOptions } from 'ngx-markdown';
 //import {InMemoryDataService} from "./inmemory/"
 
 import {AppRoutingModule} from './app-routing.module';
@@ -31,6 +32,8 @@ import {ContactComponent} from './contact/contact.component';
 import {SignupComponent} from './signup/signup.component';
 import {InMemoryDataService} from "./services/inmemory/in-memory-data.service";
 import {HttpClientInMemoryWebApiModule} from "angular-in-memory-web-api";
+import { ArticleEditComponent } from './article-edit/article-edit.component';
+import { ArticleCreateComponent } from './article-create/article-create.component';
 
 @NgModule({
   declarations: [
@@ -56,7 +59,9 @@ import {HttpClientInMemoryWebApiModule} from "angular-in-memory-web-api";
     PaginationComponent,
     LoginComponent,
     ContactComponent,
-    SignupComponent
+    SignupComponent,
+    ArticleEditComponent,
+    ArticleCreateComponent
 
   ],
   imports: [
@@ -66,6 +71,21 @@ import {HttpClientInMemoryWebApiModule} from "angular-in-memory-web-api";
     HttpClientModule,
     FormsModule,
     ReactiveFormsModule,
+    MarkdownModule.forRoot({
+      loader: HttpClientModule, // optional, only if you use [src] attribute
+      markedOptions: {
+        provide: MarkedOptions,
+        useValue: {
+          gfm: true,
+          tables: true,
+          breaks: false,
+          pedantic: false,
+          sanitize: false,
+          smartLists: true,
+          smartypants: false,
+        },
+      },
+    }),
     HttpClientInMemoryWebApiModule.forRoot(
       InMemoryDataService, {dataEncapsulation: false}
     )

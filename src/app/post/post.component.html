@@ -7,7 +7,9 @@
       <div class="post"></div>
       <p>{{post.description |textFilter:100}}</p>
     </div>
-    <a href="/Article/{{post.id}}" class="button">Read More</a>
+    <a href="/Article/{{post.id}}" class="button"><span><i class="fa fa-anchor"></i></span></a>
+
+    <a href="/Article-edit/{{post.id}}" class="button"><span><i class="fa fa-edit"></i></span></a>
   </div>
 </div>
 <app-pagination [pager]="pager" (setPage)="setPage($event)"></app-pagination>

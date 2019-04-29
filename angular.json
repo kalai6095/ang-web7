@@ -28,6 +28,7 @@
               "node_modules/font-awesome/css/font-awesome.css"
             ],
             "scripts": [
+              "node_modules/marked/lib/marked.js",
               "src/assets/js/jquery.js",
               "node_modules/wow.js/dist/wow.js",
               "node_modules/waypoints/lib/jquery.waypoints.min.js",

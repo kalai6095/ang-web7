@@ -17,7 +17,10 @@
   <div class="col-2">
 
     <p>{{article.description}}</p>
-    <footer><span class="post"><i class="{{article.icon}}"></i></span> | {{article.author}} - {{article.date|date:'dd/MM/yyyy'}}</footer>
+    <footer><span class="post"><i class="{{article.icon}}"></i></span> | {{article.author}} - {{article.date|date:'dd/MM/yyyy'}}
+
+      <button class="button" (click)="goBack()"> Back</button>
+    </footer>
   </div>
 </section>
 <!--End of Introduction-->

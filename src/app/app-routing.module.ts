@@ -14,6 +14,9 @@ import {RoutegaurdService} from "./services/routeg/routegaurd.service";
 import {LoginComponent} from "./login/login.component";
 import {SignupComponent} from "./signup/signup.component";
 import {ContactComponent} from "./contact/contact.component";
+import { ArticleEditComponent } from './article-edit/article-edit.component';
+import { ArticleCreateComponent } from './article-create/article-create.component';
+
 
 const routes: Routes = [
 
@@ -29,7 +32,9 @@ const routes: Routes = [
   {path: 'Service', component: ServicesComponent},
   {path: 'Testimonial', component: TestimonialComponent},
   {path: 'Blog', component: BlogComponent, canActivate: [RoutegaurdService]},
-  {path: 'Article/:id', component: ArticleComponent},
+  {path: 'Article/:id', component: ArticleComponent, canActivate: [RoutegaurdService]},
+  {path: 'Article-edit/:id', component: ArticleEditComponent, canActivate: [RoutegaurdService]},
+  {path: 'Article-create', component: ArticleCreateComponent, canActivate: [RoutegaurdService]},
   {path: '404', component: NotfoundComponent},
   {path: '**', redirectTo: '/404'}
 

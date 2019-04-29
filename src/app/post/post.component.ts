@@ -1,6 +1,8 @@
 import {Component, Input, OnInit} from '@angular/core';
 import {ConfigService} from "../config.service";
 import {PagerService} from "../pager.service";
+import {Post} from "../Post";
+import {pipe} from "rxjs";
 
 @Component({
   selector: 'app-post',
@@ -11,8 +13,8 @@ export class PostComponent implements OnInit {
 
   // @Input()posts = {};
 
-  posts = {};
-  allItems: any[];
+  posts = [];
+  allItems: any;
   pages: any[];
   pageSize = 4;
   pager: any = {};
@@ -21,9 +23,21 @@ export class PostComponent implements OnInit {
   }
 
   ngOnInit() {
-    this.posts = this.config.getConfigInfo().posts;
-    this.allItems = this.posts["lists"];
-    this.setPage(1);
+    //this.posts = this.config.getConfigInfo().posts;
+    this.getPosts();
+    //this.allItems = this.posts["lists"];
+    //this.setPage(1);
+  }
+
+  getPosts() {
+    this.config.getPost().subscribe(
+      posts => {
+        this.posts = posts;
+        this.allItems = this.posts;
+        this.setPage(1);
+
+      }
+    );
   }
 
   setPage(pageNumber: number) {

@@ -1,4 +1,4 @@
-import {Component, OnInit} from '@angular/core';
+import {Component, NgZone, OnInit} from '@angular/core';
 import {AuthenticationService} from "../services/auth/authentication.service";
 import * as $ from "jquery";
 
@@ -11,7 +11,7 @@ export class NavComponent implements OnInit {
 
   activeTab: string = "Home";
 
-  constructor(private auth: AuthenticationService) {
+  constructor(private auth: AuthenticationService, private ngzone: NgZone) {
   }
 
   ngOnInit() {
@@ -44,14 +44,16 @@ export class NavComponent implements OnInit {
         (<any>$)('#header').stickyNavbar();
       }
 
-      (<any>$)('#content').waypoint(function (direction) {
-        if (direction === 'down') {
-          (<any>$)('#header').addClass('nav-solid fadeInDown');
-        }
-        else {
-          (<any>$)('#header').removeClass('nav-solid fadeInDown');
-        }
-      });
+      this.ngzone.run(() => {
+        (<any>$)('#content').waypoint(function (direction) {
+          if (direction === 'down') {
+            (<any>$)('#header').addClass('nav-solid fadeInDown');
+          } else {
+            (<any>$)('#header').removeClass('nav-solid fadeInDown');
+          }
+        });
+      })
+
     });
   }
 

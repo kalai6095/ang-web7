@@ -168,7 +168,8 @@ export const configuration = {
         'company': "Happy Customer"
       }
     ]
-  }, social: {
+  },
+  social: {
     'sites': [
       {'title': "Facebook", 'icon': "fa fa-facebook fa-1x", 'link': "https://www.facebook.com/username"},
       {'title': "Google+", 'icon': "fa fa-google-plus fa-1x", 'link': "http://google.com/+username"},
